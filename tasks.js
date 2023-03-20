@@ -61,4 +61,16 @@ function squareNumber(n) {
     return result;
 }
 
-console.log(squareNumber(7));
+// console.log(squareNumber(7));
+
+// Task 5
+
+function sum(n, k) {
+    let result = 0;
+    for (let i = 0; i <= n; i++) {
+        result += i ** k;
+    }
+    return result
+}
+
+console.log(sum(5, 4));
