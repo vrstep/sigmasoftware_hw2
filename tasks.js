@@ -16,10 +16,10 @@ function swapThreeDigit(n) {
     return result;
 }
 
-console.log(swapThreeDigit(562));
-console.log(swapThreeDigit(123));
-console.log(swapThreeDigit(879));
-console.log(swapThreeDigit(49));
+// console.log(swapThreeDigit(562));
+// console.log(swapThreeDigit(123));
+// console.log(swapThreeDigit(879));
+// console.log(swapThreeDigit(49));
 
 // Task 2
 
@@ -35,4 +35,16 @@ if (A != B) {
     B = 0;
 }
 
-console.log(A, B);
+// console.log(A, B);
+
+// Task 3 
+
+function whatYear(year) {
+    let result;
+    if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+        result = `В ${year} году 366 дней`;
+    } else result = `В ${year} году 365 дней`;
+    return result;
+}
+
+console.log(whatYear(2023));
