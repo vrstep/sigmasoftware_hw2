@@ -73,4 +73,21 @@ function sum(n, k) {
     return result
 }
 
-console.log(sum(5, 4));
+// console.log(sum(5, 4));
+
+// Task 6
+
+let array = [2, 54, 33, 632, 23, 1, 9, 11, 55, 100];
+
+let minElement = array[2];
+
+for (let i = 0; i < array.length; i++) {
+    if (i % 2 == 0 && i != 0) {
+        if (minElement > array[i]) {
+            minElement = array[i];
+        }
+    }
+}
+console.log(minElement)
+
+// Task 7
