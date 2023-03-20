@@ -20,3 +20,19 @@ console.log(swapThreeDigit(562));
 console.log(swapThreeDigit(123));
 console.log(swapThreeDigit(879));
 console.log(swapThreeDigit(49));
+
+// Task 2
+
+let A = 40;
+let B = 99;
+
+if (A != B) {
+    let temp = A + B;
+    A = temp;
+    B = temp;
+} else if (A == B) {
+    A = 0;
+    B = 0;
+}
+
+console.log(A, B);
