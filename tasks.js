@@ -88,6 +88,23 @@ for (let i = 0; i < array.length; i++) {
         }
     }
 }
-console.log(minElement)
+// console.log(minElement)
 
 // Task 7
+
+array = [2, 54, 33, 632, 23, 1, 9, 11, 55, 100];
+
+let maxSumPair = array[0] + array[1];
+
+let firstElement = 0;
+let secondElement = 0;
+
+for (let i = 0; i < array.length; i++) {
+    if (maxSumPair < array[i] + array[i + 1]) {
+        maxSumPair = array[i] + array[i + 1];
+        firstElement = array[i];
+        secondElement = array[i + 1];
+    }
+}
+
+console.log(firstElement, secondElement);
