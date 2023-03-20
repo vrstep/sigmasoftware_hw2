@@ -47,4 +47,18 @@ function whatYear(year) {
     return result;
 }
 
-console.log(whatYear(2023));
+// console.log(whatYear(2023));
+
+// Task 4
+
+function squareNumber(n) {
+    let result = 0;
+    if (n > 0) {
+        for (let i = 1; i <= n; i++) {
+            result += 2 * i - 1;
+        }
+    } else return "Input number greater than 0";
+    return result;
+}
+
+console.log(squareNumber(7));
