@@ -155,4 +155,21 @@ function zeroBeforePositive(array) {
     return newArray;
 }
 
-console.log(zeroBeforePositive(array));
+// console.log(zeroBeforePositive(array));
+
+// Task 11
+
+let string = "This is America, yeah let's goooo!";
+
+function whatBetweenSpaces(string) {
+    let result;
+    let firstWhitespace = string.indexOf(" ");
+    let secondWhitespace = string.indexOf(" ", firstWhitespace + 1);
+    let spacesCount = string.split(' ').length - 1;
+    if (spacesCount > 1) {
+       result = string.substring(string.indexOf(" ") + 1, string.lastIndexOf(" ", secondWhitespace));
+    } else result = " ";
+    return result;
+}
+
+console.log(whatBetweenSpaces(string));
