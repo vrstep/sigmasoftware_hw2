@@ -167,9 +167,29 @@ function whatBetweenSpaces(string) {
     let secondWhitespace = string.indexOf(" ", firstWhitespace + 1);
     let spacesCount = string.split(' ').length - 1;
     if (spacesCount > 1) {
-       result = string.substring(string.indexOf(" ") + 1, string.lastIndexOf(" ", secondWhitespace));
+       result = string.substring(
+        string.indexOf(" ") + 1, 
+        string.lastIndexOf(" ", secondWhitespace));
     } else result = " ";
     return result;
 }
 
-console.log(whatBetweenSpaces(string));
+// console.log(whatBetweenSpaces(string));
+
+// Task 12
+
+string = "Славик и Яна очень любят вкусно покушать";
+
+function findShortest(string) {
+    let shortest;
+    let words = string.split(' ');
+
+    for (let word of words) {
+        if (!shortest || word.length < shortest.length) {
+            shortest = word;
+        }
+    }
+    return shortest;
+}
+
+console.log(findShortest(string));
