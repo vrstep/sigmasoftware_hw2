@@ -192,4 +192,9 @@ function findShortest(string) {
     return shortest;
 }
 
-console.log(findShortest(string));
+// console.log(findShortest(string));
+
+// Task 13
+
+string = "100 + 100 + 100";
+console.log(eval(string));  
