@@ -119,4 +119,20 @@ function moveRight(array) {
     return array;
 }
 
-console.log(moveRight(array));
+// console.log(moveRight(array));
+
+// Task 9
+
+array = [30, 8, 10, 14, 22, 24, 45, 49, 50];
+
+function rightOrderedArray(array) {
+    let firstElement = array.shift();
+    for (let i = 0; i < array.length; i++) {
+        if (firstElement < array[i + 1] && firstElement > array[i - 1]) {
+            array.splice(i, 0, firstElement);
+        }
+    }
+    return array;
+}
+
+console.log(rightOrderedArray(array));
