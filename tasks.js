@@ -135,4 +135,24 @@ function rightOrderedArray(array) {
     return array;
 }
 
-console.log(rightOrderedArray(array));
+// console.log(rightOrderedArray(array));
+
+// Task 10
+
+array = [30, -8, 10, 14, -22, 24, 45, -49, 50]
+
+function zeroBeforePositive(array) {
+    let newArray = []
+    for (let i = 0; i < array.length; i++) {
+        // newArray.push(array[i]);
+        if (array[i] > 0) {
+            newArray.push(0);
+            newArray.push(array[i]);
+        } else {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
+
+console.log(zeroBeforePositive(array));
