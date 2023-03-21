@@ -197,4 +197,39 @@ function findShortest(string) {
 // Task 13
 
 string = "100 + 100 + 100";
-console.log(eval(string));  
+// console.log(eval(string));
+
+// Task 14
+
+string = "Южная Корея и Северная корея";
+
+function removeDuplicate(string) {
+    let array = string.split(' ');
+    console.log(array)
+    let result;
+
+    result = array.filter(
+        (element, index) => array.indexOf(element) === index);
+    return result;
+}
+
+
+// console.log(removeDuplicate(string));
+
+// Task 15
+
+sum = 1200;
+
+function sale(sum) {
+    let result;
+    if (sum > 1000) {
+        result = sum - (sum * 0.10);
+    } 
+    else if (sum > 500) {
+        result = sum - (sum * 0.05);
+    } 
+    else result = "No skidka";
+    return result
+}
+
+console.log(sale(sum));
