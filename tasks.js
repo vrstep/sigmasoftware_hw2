@@ -107,4 +107,16 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
-console.log(firstElement, secondElement);
+// console.log(firstElement, secondElement);
+
+// Task 8
+
+array = [2, 54, 33, 632, 23, 1, 9, 11, 55, 100];
+
+function moveRight(array) {
+    let lastElement = array.pop();
+    array.unshift(lastElement);
+    return array;
+}
+
+console.log(moveRight(array));
